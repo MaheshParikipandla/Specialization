@@ -75,7 +75,6 @@ return "Product{" +
 }
 
 -----------------------------------------------------
-[11:35] Thanu Lokesh
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;public class Menu {
@@ -172,7 +171,6 @@ System.out.println("Product was removed");
 } }
 }
 
-[11:35] Thanu Lokesh
 public class Main {
 int id;
 String product_name;
