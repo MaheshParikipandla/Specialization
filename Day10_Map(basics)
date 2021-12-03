@@ -16,7 +16,7 @@ public class Main
 }
 
 -------------------------------------------
-
+//Queue
 //difference between remove and poll
 import java.util.*; 
 public class Main
@@ -41,5 +41,30 @@ public class Main
 	    name = q.remove();
 	   System.out.println(name+" "+q); 
 	   
+	}
+}
+
+-----------------------------------------
+//Linkedlist
+import java.util.*; 
+public class Main
+{
+	public static void main(String[] args) {
+	   LinkedList<String>l=new LinkedList<>();
+	   l.add("mahesh");
+	   l.add("sai");
+	   l.add("monica");
+	   l.add("pinky");
+	   System.out.println(l);
+	   l.addFirst("Mahi");
+	   l.addLast("ram");
+	   System.out.println(l); 
+	   l.add(3,"manisha");
+	    System.out.println(l); 
+	    List<String>list=new LinkedList<>();
+	    list.add("Thanu");
+	    list.add("suresh");
+	    l.addAll(list);
+	    System.out.println(l); 
 	}
 }
