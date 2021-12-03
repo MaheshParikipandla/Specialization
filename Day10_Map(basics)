@@ -66,5 +66,7 @@ public class Main
 	    list.add("suresh");
 	    l.addAll(list);
 	    System.out.println(l); 
+	     System.out.println(l.getFirst()); 
+	     System.out.println(l.getLast());
 	}
 }
