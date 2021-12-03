@@ -1,0 +1,619 @@
+1.A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+Ask user for their salary and year of service and print the net bonus amount.
+import java.util.Scanner;
+
+public class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+double bonus;
+
+Scanner ip = new Scanner(System.in);
+
+double a; double b;
+
+System.out.println("monthly salary");
+
+a=ip.nextInt();
+
+System.out.println("serving years");
+
+b=ip.nextInt();
+
+bonus=((5*a)/100);
+
+if (b>5||b==5){
+
+System.out.println("your bonus:"+ bonus);
+
+}
+
+else{
+
+System.out.println("bonus denied");
+
+}
+}
+}
+---------------------------------------------------------------------------------------
+2.A school has following rules for grading system:
+a. Below 25 - F
+b. 25 to 45 - E
+c. 45 to 50 - D
+d. 50 to 60 - C
+e. 60 to 80 - B
+f. Above 80 - A
+Ask user to enter marks and print the corresponding grade.
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+
+{
+    
+    System.out.println("Enter Marks of any Subject");
+    int m;
+    Scanner ip = new Scanner(System.in);
+
+        System.out.println("The student Grade is:");
+        if(m>=80)
+        {
+            System.out.print("A");
+        }
+        else if(m>=60 && m<80)
+        {
+           System.out.print("B");
+        } 
+        else if(m>=50 && m<60)
+        {
+            System.out.print("C");
+        }
+        else if(m>=45 && m<50)
+        {
+            System.out.print("D");
+        }
+        else
+        {
+            System.out.print("F");
+        }
+}
+}
+---------------------------------------------------------------------------------------
+3.
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+
+Scanner ip=new Scanner(System.in);
+System.out.println("enter the age of three person");
+int p1=ip.nextInt();
+int p2=ip.nextInt();
+int p3=ip.nextInt();
+int old,young;
+if(p1>p2) {
+old = p1;
+young = p2;
+}
+else {
+old= p2;
+young = p1;
+}
+if(p3 > old) old = p3;
+if(p3 < young) young = p3;
+System.out.println("young...."+yonger);
+System.out.println("old...."+older);
+}
+}
+
+-----------------------------------------------------------------------------------------
+4.
+
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter number");
+int x = sc.nextInt();
+if(x<0){
+System.out.println("Absolute value = " +(-1*x));
+}
+else{
+System.out.println("Absolute value = " +x);
+
+}
+}
+}
+--------------------------------------------------------------------------------------
+5.
+public class Main {
+   public static void main(String args[]){
+      float tc;
+      float ca;
+      
+      System.out.println("Enter Total classes helD::");
+      Scanner ip = new Scanner(System.in);
+
+      System.out.println("Enter total class atteneded ::");
+      ca = ip.nextFloat();
+
+      percentage = (float)((ca / tc) * 100);
+      System.out.println("Percentage ::"+ percentage);
+      if(percentage>=75){
+	System.out.println("Eligible for exam");
+	}
+	else{
+	System.out.println(" not Eligible for exam");
+	}
+   }
+}
+---------------------------------------------------------------------------------------
+6.
+public class main {
+public static void main(String[] args){
+int sum=0;
+for(int i=0; i<=100; i=i+2){
+sum = sum + i;
+}
+System.out.println(sum);
+}
+--------------------------------------------------------------------------------------------
+7.
+public class Main
+{
+	public static void main(String args[]) 
+	{
+		int sum = 0;
+		for (int i = 1; i <= 100; i++) 
+		{
+			if (i % 2 != 0) 
+			{
+				sum = sum + i;
+			}
+		}
+		System.out.println("The Sum Of 100 Odd Numbers are:" + sum);
+	}
+}
+---------------------------------------------------------------------------------------
+8.
+
+    public static void main(String[] args) {
+
+        int num = 100, sum = 0;
+
+        for(int i = 1; i <= num; ++i)
+        {
+            sum += i;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
+----------------------------------------------------------------
+9.
+public class Main
+{
+public static void main(String[] args) {
+int i = 1,sum=0;
+while(i<=100){
+if(i%3==0 && i%5==0){
+sum = sum+i;
+}
+i++;
+}
+System.out.println("The sum is "+sum );
+}
+--------------------------------------------------------------------------------------------------------
+10.
+public class Main {
+public static void main(String[] args) {
+int count=0;
+for(int i=200;i<=500;i++) {
+if( isPrime(i) == true) {
+count++;
+if(count>5){
+break;
+}
+System.out.print(i+" ");
+}
+}
+}
+static boolean isPrime(int n){
+boolean res = false;
+int i;
+for(i=2;(i<=n/2) && (n % i != 0);i++);
+if(i>n/2) {
+res = true;
+}
+return res;
+}
+}
+
+//another way
+
+public class Main
+{
+public static void main(String[] args)
+{
+int count=0;
+for(int i=200;(i<=500 && count<=5);i++) {
+if( isPrime(i) == true)
+{
+count++;
+System.out.println(i+ " ");
+
+}
+
+}
+}
+static boolean isPrime(int n){
+
+
+
+
+boolean res = false;
+int i;
+for(i=2;(i<=n/2) && (n % i != 0);i++);
+
+
+
+if(i>n/2) {
+res = true;
+}
+return res;
+}
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------
+11.
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your first number: ");
+        double x = in.nextDouble();
+        System.out.print("Enter your second number: ");
+        double y = in.nextDouble();
+        x =(x * 1000);
+        x = x / 1000;
+        y =(y * 1000);
+        y = y / 1000;
+        if (x == y)
+        {
+            System.out.println("They are the same up to three decimal places");
+        }
+        else
+        {
+            System.out.println("They are different");
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------------
+12.
+import java.util.Scanner;
+public class Main{
+
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int x = in.nextInt();
+        System.out.print("Enter second number: ");
+        int y = in.nextInt();
+        System.out.print("Enter third number: ");
+        int z = in.nextInt();
+        if (x == y && x == z)
+        {
+            System.out.println("all numbers are equal");
+        }
+        else if ((x == y) || (x == z) || (z == y))
+        {
+            System.out.println(" all are neither equal nor different");
+        }
+        else
+        {
+            System.out.println("All numbers are different");
+        }
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+13.
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input first number: ");
+        double x = in.nextDouble();
+        System.out.print("Input second number: ");
+        double y = in.nextDouble();
+        System.out.print("Input third number: ");
+        double z = in.nextDouble();
+        if (x < y && y < z)
+        {
+            System.out.println("Increasing order");
+        }
+        else if (x > y && y > z)
+        {
+            System.out.println("Decreasing order");
+        }
+        else
+        {
+            System.out.println("Neither increasing nor decreasing order");
+        }
+    }
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+14.
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) { 
+ Scanner input = new Scanner(System.in); 
+ System.out.print("Enter first  number: "); 
+ double num1 = input.nextDouble(); 
+ System.out.print("Enter second number: "); 
+ double num2 = input.nextDouble(); 
+ input.close(); 
+  
+ if (Math.abs(num1 - num2) <= 0.01) { 
+     System.out.println(" These entered numbers are the same."); 
+ } 
+ else { 
+     System.out.println("These entered numbers are different."); 
+ } 
+    } 
+-----------------------------------------------------------------------------------------------------------------------------------------
+15.write a program to find sum of the smallest and highest prime number in a given range?
+    public static void main(String args[])
+    {
+        int a,b,flag,i;
+        Scanner ip = new Scanner(System.in);
+        System.out.print("Enter start value : ");
+        a = ip.nextInt();
+        System.out.print("Enter end value :");
+        b = ip.nextInt();
+        System.out.print("Prime numbers between "+ a + " and "+ b + "are : ");
+        while (a < b)
+        {
+            flag = 0;
+            for(i = 2; i <= a/2; ++i)
+            {
+                if(a % i == 0)
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0)
+                System.out.print(a + "");
+            ++a;
+        }
+    }
+}
+//another method
+import java.util.Scanner;
+ 
+public class Demo {
+ 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+
+        boolean isFirst = false;
+        int firstPrimeNo=0;
+        int lastPrimeNo=0;
+        for(int i=n1;i<=n2;i++) {
+
+            if( isPrime(i) == true) {
+
+                if(isFirst == false) {
+                    firstPrimeNo = i;
+                    isFirst = true;
+                }
+
+                lastPrimeNo = i;
+
+            }// if
+    }// for
+
+        System.out.println("Smalest prime No..."+firstPrimeNo+"....Biggest prime No..."+lastPrimeNo);
+
+    }
+ 
+    
+    static boolean isPrime(int n){
+
+        boolean res = false;
+        int i;
+        for(i=2;(i<=n/2) && (n % i != 0);i++);
+
+        if(i>n/2) {
+            res = true;
+        }
+        return res;
+    }
+
+}
+//reverse way
+import java.util.Scanner;
+ 
+public class Demo {
+ 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+
+        boolean isFirst = false;
+        int biggestPrime=0;
+        int smallestPrime=0;
+        for(int i=n2;i>=n1;i--) {// 200...100
+
+            if( isPrime(i) == true) {
+
+                if(isFirst == false) {
+                    biggestPrime = i;
+                    isFirst = true;
+                }
+
+                smallestPrime = i;
+
+            }// if
+    }// for
+
+        // 100.. 200
+
+        // 200..100
+
+        System.out.println("Smalest prime No..."+smallestPrime+"....Biggest prime No..."+biggestPrime);
+
+    }
+ 
+    
+    static boolean isPrime(int n){
+
+        boolean res = false;
+        int i;
+        for(i=2;(i<=n/2) && (n % i != 0);i++);
+
+        if(i>n/2) {
+            res = true;
+        }
+        return res;
+    }
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+16.Program to Round a Number to n Decimal
+import java.util.Scanner;
+
+public class Decimal {
+
+    public static void main(String[] args) {
+        double a;
+        Scanner ip = new Scanner(System.in);
+        System.out.print("Enter start value : ");
+        a = ip.nextInt();
+        System.out.format("%.3f", a);
+    }
+}
+//another method
+public class RoundedNo {
+ 
+    public static void main(String[] args) {
+
+        float n =  1.34678f;
+
+        int temp  = (int)(n * 1000);// 1346
+        int r = temp % 10;/// 1346 % 10...
+        if(r >=5)
+        {
+            temp = (temp / 10) + 1;//1346/10 === 134 +1
+        }
+        n = temp / 100.0f;// === 135 / 100.0 ===== 1.35
+
+        System.out.println("Result...."+n);
+        // 1.35
+ 
+    }
+ 
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+17.Write a program to display a number whose digits are 3 greater than the corresponding digits of the number TAKEN.
+[Wednesday 10:23 AM] basha--Tutor (Guest)
+import java.util.Scanner; public class GreaterTakenNo {​​​​​     public static void main(String[] args) {​​​​​
+
+        // 5696..... 
+
+        // 8929... 1000 * 8 + 9 * 100 + 2* 10 + 9 * 1
+
+        // 5696...
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n = scanner.nextInt();
+
+        int p = 1;
+
+        int res =0;
+
+        for(int r=0; n != 0 ;) {​​​​​
+
+            r = n % 10;// 5696 % 10....6
+
+            n = n /10; // 569... 56 5 0
+
+            r = r+3;
+
+            r = r % 10;// 10 % 10 ===0
+
+            //if(r >= 10) {​​​​​
+
+                //r = r - 10;// 9+3=12-10=2
+
+                //r = r % 10;// 12 % 10===2
+
+        //    }​​​​​
+
+            res = res + r * p;
+
+            p = p* 10;
+
+        }​​​​​
+
+        System.out.println("result...."+res);/// 
+
+        // 5678
+
+        //8901
+
+    }​​​​​ }​​​​​
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+18.Program to  find common elements in three arrays which are sorted?
+
+public class Array {
+void findCommon(int ar1[], int ar2[], int ar3[])
+{
+
+int i = 0, j = 0, k = 0;
+
+while (i < ar1.length && j < ar2.length && k < ar3.length)
+{
+
+if (ar1[i] == ar2[j] && ar2[j] == ar3[k])
+{
+ System.out.print(ar1[i]+" "); i++; j++; k++; }
+// x < y
+else if (ar1[i] < ar2[j])
+i++;
+// y < z
+else if (ar2[j] < ar3[k])
+j++;
+// We reach here when x > y and z < y, i.e., z is smallest
+else
+k++;
+}
+}
+
+public static void main(String args[])
+{
+FindCommon ob = new FindCommon();
+
+int ar1[] = {1, 5, 10, 20, 40, 80};
+int ar2[] = {6, 7, 20, 80, 100};
+int ar3[] = {3, 4, 15, 20, 30, 70, 80, 120};System.out.print("Common elements are ");
+ob.findCommon(ar1, ar2, ar3);
+}
+}
