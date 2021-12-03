@@ -16,3 +16,30 @@ public class Main
 }
 
 -------------------------------------------
+
+//difference between remove and poll
+import java.util.*; 
+public class Main
+{
+	public static void main(String[] args) {
+	   Queue<String>q=new LinkedList<>();
+	   q.add("mahesh");
+	   q.add("sai");
+	   q.add("monica");
+	   q.add("pinky");
+	   System.out.println(q);
+	   String name=q.remove();
+	   System.out.println(name+ " "+q);
+	    name = q.poll();
+	   System.out.println(name+ " "+q); 
+	    name = q.poll();
+	   System.out.println(name+ " "+q); 
+	    name = q.poll();
+	   System.out.println(name+" "+q); 
+	    name = q.poll();
+	   System.out.println("This is poll method " +(name+" "+q)); 
+	    name = q.remove();
+	   System.out.println(name+" "+q); 
+	   
+	}
+}
