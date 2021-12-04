@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    List<String>l=new ArrayList<String>();
+	    l.add("mahesh");
+	    l.add("monica");
+	    l.add("sai");
+	    //Print name starting with M
+	   // l.stream().filter((s)->s.startsWith("S"))
+	   // .forEach(System.out::println);
+	   
+	    // converting to lowercase
+	   //l.stream().filter((s)->s.startsWith("m"))
+	   //.map(String::toLowerCase)
+	   //.forEach(System.out::println);
+	   
+	   //Sorting and converting to uppercase
+// 	   l.stream().sorted()
+// 	   .map(String ::toUpperCase)
+// 	   .forEach(System.out::println);
+
+//checking data is original data is modified or not
+// 		l.forEach(System.out::println);
+	}
+}
