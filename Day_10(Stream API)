@@ -52,6 +52,8 @@ public class Main
 	   Optional<String>reduce=l.stream().reduce((s1,s2)->s1 + " & " +s2);
 	    reduce.ifPresent(System.out::println);
 	    
-	    //
+	    //to find first occured element among duplicates--stream.findFirst().get()
+	    String firstFound=l.stream().filter((s)->s.startsWith("m")).findFirst().get();
+	    System.out.println(firstFound);
 }
 }
