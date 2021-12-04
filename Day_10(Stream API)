@@ -55,5 +55,11 @@ public class Main
 	    //to find first occured element among duplicates--stream.findFirst().get()
 	    String firstFound=l.stream().filter((s)->s.startsWith("m")).findFirst().get();
 	    System.out.println(firstFound);
+	    
+	    //removing duplicates using distinct method
+	    l.stream().distinct()
+	    .forEach(System.out::println);
+	    
+	    //
 }
 }
