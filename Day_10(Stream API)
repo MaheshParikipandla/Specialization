@@ -43,5 +43,9 @@ public class Main
 	   //Stream.noneMatch()
 	   boolean matchedResult=l.stream().noneMatch((s)->s.startsWith("s"));
 	   System.out.println(matchedResult);
+	   
+	   //stream.count()
+	   long matchedResult=l.stream().filter((s)->s.startsWith("m")).count();
+	   System.out.println(matchedResult);
 }
 }
