@@ -32,5 +32,16 @@ public class Main
 	   
 	   //checking data is original data is modified or not
 	   System.out.println(l);
-	}
+	   
+//Stream.anymatch()
+ boolean matchedResult=l.stream().anyMatch((s)->s.startsWith("m"));
+	   System.out.println(matchedResult);
+	   
+	   //stream.allMatch()
+ boolean matchedResult=l.stream().allMatch((s)->s.startsWith("m"));
+	   System.out.println(matchedResult);
+	   //Stream.noneMatch()
+	   boolean matchedResult=l.stream().noneMatch((s)->s.startsWith("s"));
+	   System.out.println(matchedResult);
+}
 }
