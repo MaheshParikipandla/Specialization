@@ -47,5 +47,11 @@ public class Main
 	   //stream.count()
 	   long matchedResult=l.stream().filter((s)->s.startsWith("m")).count();
 	   System.out.println(matchedResult);
+	   
+	   //stream.reduce()
+	   Optional<String>reduce=l.stream().reduce((s1,s2)->s1 + " & " +s2);
+	    reduce.ifPresent(System.out::println);
+	    
+	    //
 }
 }
