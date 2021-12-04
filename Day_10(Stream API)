@@ -23,5 +23,14 @@ public class Main
 
 //checking data is original data is modified or not
 // 		l.forEach(System.out::println);
+
+//Stream.collect()
+ List<String>ll=l.stream().sorted()
+	                  .map(String::toUpperCase)
+	                  .collect(Collectors.toList());
+	   System.out.println(ll);
+	   
+	   //checking data is original data is modified or not
+	   System.out.println(l);
 	}
 }
