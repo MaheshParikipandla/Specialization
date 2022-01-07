@@ -28,7 +28,7 @@ public class Main
 	}
 }
 
-//even numbers
+//even numbers program
 
 public class Main
 {
