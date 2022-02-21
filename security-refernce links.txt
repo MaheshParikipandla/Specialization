@@ -1,0 +1,11 @@
+https://www.npmjs.com/package/react-webcam-barcode-scanner - barcode
+https://school.geekwall.in/p/S1Pa4ZA6E/ - login validation
+https://github.com/fingerprintjs/fingerprintjs-react-example/blob/main/README.md
+https://dev.fingerprintjs.com/docs
+https://www.bing.com/search?q=react+login+secure&cvid=722be9e214a94acf933d9d7478a5d026&aqs=edge..69i57j0l2j69i60l2.16892j0j1&pglt=43&FORM=ANNTA1&PC=U531
+https://www.techgeeknext.com/spring-boot/spring-boot-session-management#:~:text=Spring%20Boot%20Session%20Management%20Example%201%20Create%20Spring,Create%20rest%20end%20points%20to%20save%2C%20destroy%2Finvalidate%20session.
+
+https://www.thomasvitale.com/https-spring-boot-ssl-certificate/
+https://stackblitz.com/edit/react-encrypt-jtrer8?file=index.js
+
+​
